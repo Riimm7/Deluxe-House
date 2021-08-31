@@ -1,0 +1,126 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, input, p, blockquote, table, th, td, embed, object {padding: 0;margin: 0; }
+fieldset, img, abbr{border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+/*--------------------*/
+
+body{
+   background-color: #191919;
+   color: #fff;
+   height: 100%;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.main{
+   flex: 1 0 auto;
+}
+
+.footer{
+   flex: 0 0 auto;
+}
+
+.header{
+
+}
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header__inner{
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo{
+
+}
+
+.logo__home{
+   position: absolute;
+   top: 25px;
+   left: 25px;
+}
+
+.logo__text{
+   max-width: 184px;
+   text-transform: uppercase;
+   font-size: 20px;
+   margin-left: 187px;
+   margin-top: 13px;
+}
+
+.logo__text span{
+   text-transform: none;
+   font-size: 14px;
+}
+
+.menu{
+   margin-top: 24px;
+}
+
+.menu__list{
+   display: flex;
+}
+
+.menu__list-item{
+}
+
+.menu__list-item + .menu__list-item{
+   margin-left: 46px;
+}
+
+.menu__list-item--active{
+   padding-bottom: 9px;
+   position: relative;
+}
+
+.menu__list-item--active::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 1px;
+   background-color: #fff;
+}
+
+.header__phone{
+padding-left: 29px;
+margin-right: 133px;
+margin-top: 22px;
+font-size: 20px;
+position: relative;
+}
+
+.header__phone::before{
+   content: '';
+   position: absolute;
+   background-image: url(/img/phone_icon.svg);
+   height: 19px;
+   width: 19px;
+   left: 0;
+}
