@@ -59,10 +59,14 @@ body{
 
 }
 
+.logo__inner{
+   position: relative;
+}
+
 .logo__home{
    position: absolute;
    top: 25px;
-   left: 25px;
+   right: 200px;
 }
 
 .logo__text{
@@ -123,4 +127,73 @@ position: relative;
    height: 19px;
    width: 19px;
    left: 0;
+}
+
+.footer{
+   font-size: 15px;
+   line-height: 25px;
+}
+
+.footer__content {
+   display: flex;
+   padding-bottom: 37px;
+}
+
+.footer__inner {
+   margin-top: 60px;
+   min-width: 600px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 87px 87px;
+   gap: 30px;
+}
+
+.footer__title{
+   margin-bottom: 15px;
+   letter-spacing: normal;
+}
+
+.footer__subtitle{
+   font-weight: 400;
+   color: #E1DECE;
+}
+
+.footer__phone {
+}
+
+.footer__number {
+   display: block;
+}
+
+.footer__social {
+}
+
+.social {
+   display: flex;
+}
+
+.social__list + .social__list {
+   margin-left: 15px;
+}
+
+.social__link {
+}
+
+.social__img {
+}
+
+.footer_addres {
+}
+
+.footer__mail {
+}
+
+.footer__location {
+}
+
+.footer__copyright{
+   text-align: center;
+   padding: 41px 0 45px;
+   font-size: 15px;
+   line-height: 25px;
 }
