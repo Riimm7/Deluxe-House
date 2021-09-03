@@ -38,8 +38,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 @font-face {
    font-family: 'Garamond';
-   src: url('/fonts/GARABD.woff2') format('woff2'),
-      url('/fonts/GARABD.woff') format('woff');
+   src: url('/fonts/GARABD.woff') format('woff');
    font-style: normal;
    font-weight: bold;
    font-display: swap;
@@ -55,35 +54,36 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 body{
+   font-family: 'Roboto', sans-serif;
+   margin: 0 auto;
+   padding: 0;
+   position: relative;
    background-color: #191919;
    color: #fff;
-   height: 100%;
-   max-width: 1440px;
-   font-family: 'Roboto', sans-serif;
 }
 
 .wrapper{
    display: flex;
    flex-direction: column;
-   min-height: 100%;
 }
 
+.container{
+   position: relative;
+   width: 1170px;
+   margin: 0 auto;
+   padding: 0;
+}
+
+.header{
+   display: block;;
+
+}
 .main{
    flex: 1 0 auto;
 }
 
 .footer{
    flex: 0 0 auto;
-}
-
-.header{
-   min-width: 100%;
-}
-
-.container{
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 15px;
 }
 
 .social {
@@ -97,24 +97,19 @@ body{
 .header__inner{
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   height: 70px;
 }
 
 .logo__inner{
    position: relative;
 }
 
-.logo__home{
-   position: absolute;
-   top: 25px;
-   right: 200px;
-}
-
 .logo__text{
+   margin-left: 16px;
    max-width: 184px;
    text-transform: uppercase;
    font-size: 20px;
-   margin-left: 187px;
-   margin-top: 13px;
 }
 
 .logo__text span{
@@ -122,15 +117,12 @@ body{
    font-size: 14px;
 }
 
-.menu{
-   margin: 24px 0;
-}
-
 .menu__list{
    display: flex;
 }
 
-.header{
+.menu__list-item{
+   padding: 9px 0;
 }
 
 .menu__list-item + .menu__list-item{
@@ -138,7 +130,7 @@ body{
 }
 
 .menu__list-item--active{
-   padding-bottom: 9px;
+   padding: 9px 0;
    position: relative;
 }
 
@@ -154,8 +146,6 @@ body{
 
 .header__phone{
 padding-left: 29px;
-margin-right: 133px;
-margin-top: 22px;
 font-size: 20px;
 position: relative;
 }
@@ -176,6 +166,21 @@ position: relative;
 .home {
    display: flex;
    width: 100%;
+   position: relative;
+}
+
+.home__bg{
+   position: absolute;
+   z-index: -99;
+   right: 0;
+   top: 0;
+   width: 93%;
+}
+
+.home__img{
+   position: absolute;
+   bottom: -22px;
+   right: 0;
 }
 
 .home__aside {
@@ -216,9 +221,14 @@ position: relative;
    max-width: 1345px;
    padding-top: 185px;
    text-align: center;
-   background: url(../img/main_bg.jpg) top left no-repeat;
    position: relative;
    z-index: -1;
+}
+
+.logo__circle{
+   position: absolute;
+   top: -40px;
+   left: -150px;
 }
 
 .home__text{
@@ -227,31 +237,27 @@ position: relative;
 }
 
 .home__title {
-   margin-bottom: 22px;
+   padding-bottom: 22px;
    font-family: 'Garamond';
    font-weight: bold;
    font-size: 50px;
    line-height: 62px;
 }
+
 .home__subtitle {
    max-width: 510px;
    min-height: 94px;
    margin: 0 auto;
-   padding-bottom: 10px;
+   padding-bottom: 30px;
    font-size: 20px;
    line-height: 32px;
 }
+
 .cost {
    max-width: 220px;
    border-radius: 50px;
    background-color: #fff;
    padding: 23px 50px;
-}
-
-.home__img{
-   position: absolute;
-   bottom: -22px;
-   right: 0;
 }
 
 .footer{
