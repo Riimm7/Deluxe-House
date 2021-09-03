@@ -53,6 +53,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    font-display: swap;
 }
 
+@font-face {
+   font-family: 'Segoe Script';
+   src: url('/fonts/SegoeScript.woff2') format('woff2'),
+      url('/fonts/SegoeScript.woff') format('woff');
+   font-style: normal;
+   font-weight: normal;
+   font-display: swap;
+}
+
 body{
    font-family: 'Roboto', sans-serif;
    margin: 0 auto;
@@ -72,6 +81,7 @@ body{
    width: 1170px;
    margin: 0 auto;
    padding: 0;
+   text-align: center;
 }
 
 .header{
@@ -94,6 +104,11 @@ body{
    margin-right: 15px;
 }
 
+.buttons{
+   display: flex;
+   justify-content: center;
+}
+
 .btn{
    width: 220px;
    height: 62px;
@@ -104,6 +119,13 @@ body{
    border-radius: 5px;
    color: #E1DECE;
    font-family: 'Garamond';
+}
+
+.stripe{
+   width: 100%;
+   height: 1px;
+   background-color: #E1DECE;
+   border-radius: 5px;
 }
 
 .header__inner{
@@ -227,7 +249,6 @@ position: relative;
 .home__content {
    max-width: 1345px;
    padding-top: 185px;
-   text-align: center;
    position: relative;
    z-index: -1;
 }
@@ -251,6 +272,10 @@ position: relative;
    line-height: 62px;
 }
 
+.home__title span{
+   color: #E1DECE;
+}
+
 .home__subtitle {
    max-width: 510px;
    min-height: 94px;
@@ -261,10 +286,13 @@ position: relative;
 }
 
 .cost {
+   display: block;
    max-width: 220px;
+   margin: 0 auto;
    border-radius: 50px;
    background-color: #fff;
    padding: 23px 50px;
+   color: #191919;
 }
 
 .projects {
@@ -272,14 +300,15 @@ position: relative;
 }
 
 .projects__title {
-   padding-bottom: 23px;
-   margin-bottom: 34px;
+   margin-bottom: 23px;
    font-family: "Garamond";
    font-weight: bold;
    font-size: 40px;
-   text-align: center;
    color: #E1DECE;
-   border-bottom: 1px solid #E1DECE;
+}
+
+.projects__stripe{
+   margin-bottom: 34px;
 }
 
 .projects__inner {
@@ -290,7 +319,6 @@ position: relative;
    margin-bottom: 84px;
 }
 .projects__item {
-   text-align: center;
    font-family: "Garamond";
 }
 .projects__item-img {
@@ -305,9 +333,109 @@ position: relative;
    margin-bottom: 4px;
 }
 
-.buttons{
+.projects__buttons{
+margin-bottom: 130px;
+}
+
+.about-us__title {
+   max-width: 650px;
+   margin: 0 auto;
+   padding-bottom: 20px;
+   font-family: "Garamond";
+   font-size: 40px;
+   line-height: 46px;
+}
+
+.about-us__title span{
+   color: #E1DECE;
+}
+
+.about-us__stripe{
+   margin-bottom: 34px;
+}
+.about-us__inner {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
+}
+.about-us__images {
+   display: flex;
+}
+
+.about-us__image + .about-us__image{
+   margin-left: 18px;
+}
+
+.about-us__content {
+   max-width: 589px;
+}
+
+.about-us__text {
+   text-align: left;
+   margin-bottom: 53px;
+}
+
+.about-us__text>p{
+   margin-bottom: 33px;
+   font-size: 16px;
+   line-height: 26px;
+}
+.about-us__items {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 48px;
+}
+
+.about-us__item {
+   position: relative;
+   display: flex;
+   flex-basis: 0;
+   min-height: 53px;
+   align-items: center;
+   text-align: left;
+   text-transform: uppercase;
+   font-size: 12px;
+}
+
+.about-us__item-left {
+   position: absolute;
+   left: 12px;
+   padding: 0 7.5px;
+   align-self: flex-end;
+   transform: rotate(-90deg);
+   transform-origin: left bottom 0;
+}
+
+.about-us__item-center {
+   margin-left: 12px;
+   padding-left: 5px;
+   font-size: 45px;
+   font-weight: medium;
+}
+
+.about-us__item-right {
+   flex-basis: 0;
+   margin-left: 5px;
+}
+
+.about-us__content-bottom {
+   display: flex;
+   justify-content: end;
+   margin-bottom: 84px;
+
+}
+.about-us__content-bottom p{
+   padding-top: 13px;
+   font-family: 'Segoe Script';
+   font-size: 16px;
+   color: #E1DECE;
+}
+
+.about-us__signature {
+   margin-left: 48px;
+}
+
+.about-us__buttons {
+   margin-bottom: 37px;
 }
 
 .footer{
