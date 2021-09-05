@@ -104,6 +104,13 @@ body{
    margin-right: 15px;
 }
 
+.title{
+   font-family: "Garamond";
+   font-size: 40px;
+   font-weight: bold;
+   color: #E1DECE;
+}
+
 .buttons{
    display: flex;
    justify-content: center;
@@ -117,6 +124,7 @@ body{
    text-align: center;
    border: 1px solid #E1DECE;
    border-radius: 5px;
+   background-color: inherit;
    color: #E1DECE;
    font-family: 'Garamond';
 }
@@ -285,6 +293,70 @@ position: relative;
    line-height: 32px;
 }
 
+.top-content{
+   position: relative;
+   width: 100%;
+}
+
+.top-content__bg{
+   position: absolute;
+   z-index: -99;
+   right: 0;
+   top: 0;
+   width: 100%;
+   height: 332px;
+}
+
+.renovation{
+   display: flex;
+   flex-direction: column;
+   height: 332px;
+}
+
+.renovation__subtitle{
+   flex: 0 0 auto;
+   padding-top: 130px;
+   line-height: 28px;
+}
+
+.renovation__title {
+   flex: 1 0 auto;
+   font-family: "Garamond";
+   font-size: 40px;
+}
+
+.breadcrumbs {
+   margin: 0 auto;
+   padding-bottom: 8px;
+}
+
+.breadcrumbs__list {
+   display: flex;
+}
+
+.breadcrumbs__item {
+   padding-left: 5px;
+   color: #E1DECE;
+}
+
+.breadcrumbs__item:first-child {
+   color: #9F9F9F;
+}
+
+.breadcrumbs__item::before {
+   content: '/';
+   
+}
+
+.breadcrumbs__item:first-child::before {
+   content: '';
+}
+
+.breadcrumbs__link {
+   line-height: 26px;
+}
+
+
 .cost {
    display: block;
    max-width: 220px;
@@ -305,6 +377,11 @@ position: relative;
    font-weight: bold;
    font-size: 40px;
    color: #E1DECE;
+}
+
+.projects__title span{
+   font-weight: bold;
+   font-size: 60px;
 }
 
 .projects__stripe{
@@ -337,7 +414,7 @@ position: relative;
 margin-bottom: 130px;
 }
 
-.about-us__title {
+.about__title {
    max-width: 650px;
    margin: 0 auto;
    padding-bottom: 20px;
@@ -346,46 +423,46 @@ margin-bottom: 130px;
    line-height: 46px;
 }
 
-.about-us__title span{
+.about__title span{
    color: #E1DECE;
 }
 
-.about-us__stripe{
+.about__stripe{
    margin-bottom: 34px;
 }
-.about-us__inner {
+.about__inner {
    display: flex;
    justify-content: space-between;
 }
-.about-us__images {
+.about__images {
    display: flex;
 }
 
-.about-us__image + .about-us__image{
+.about__image + .about-us__image{
    margin-left: 18px;
 }
 
-.about-us__content {
+.about__content {
    max-width: 589px;
 }
 
-.about-us__text {
+.about__text {
    text-align: left;
    margin-bottom: 53px;
 }
 
-.about-us__text>p{
+.about__text>p{
    margin-bottom: 33px;
    font-size: 16px;
    line-height: 26px;
 }
-.about-us__items {
+.about__items {
    display: flex;
    justify-content: space-between;
    margin-bottom: 48px;
 }
 
-.about-us__item {
+.about__item {
    position: relative;
    display: flex;
    flex-basis: 0;
@@ -396,7 +473,7 @@ margin-bottom: 130px;
    font-size: 12px;
 }
 
-.about-us__item-left {
+.about__item-left {
    position: absolute;
    left: 12px;
    padding: 0 7.5px;
@@ -405,32 +482,32 @@ margin-bottom: 130px;
    transform-origin: left bottom 0;
 }
 
-.about-us__item-center {
+.about__item-center {
    margin-left: 12px;
    padding-left: 5px;
    font-size: 45px;
    font-weight: medium;
 }
 
-.about-us__item-right {
+.about__item-right {
    flex-basis: 0;
    margin-left: 5px;
 }
 
-.about-us__content-bottom {
+.about__content-bottom {
    display: flex;
    justify-content: end;
    margin-bottom: 84px;
 
 }
-.about-us__content-bottom p{
+.about__content-bottom p{
    padding-top: 13px;
    font-family: 'Segoe Script';
    font-size: 16px;
    color: #E1DECE;
 }
 
-.about-us__signature {
+.about__signature {
    margin-left: 48px;
 }
 
@@ -728,9 +805,112 @@ left: 0;
    align-items: center;
    margin-bottom: 230px;
 }
+
 .partners__item {
    margin: -25px 0;
+}
 
+.projects__renovation{
+padding-top: 83px;
+margin-bottom: 174px;
+}
+
+.projects__text {
+   max-width: 750px;
+   margin: 0 auto 83px;
+   font-size: 16px;
+   line-height: 26px;
+}
+
+.projects__text p {
+   margin-bottom: 22px;
+}
+
+.projects__renovation-title{
+   font-weight: normal;
+   color: #E1DECE;
+}
+
+.payment-order {
+   margin-bottom: 133px;
+}
+
+.payment-order__title {
+   margin-bottom: 55px;
+}
+.payment-order__cols {
+   display: flex;
+   justify-content: space-between;
+}
+.payment-order__col {
+   max-width: 45%;
+   text-align: left;
+   font-size: 16px;
+}
+
+.payment-order__col p {
+   margin-bottom: 7px;
+}
+
+.payment-order__percent {
+margin-bottom: 14px;
+}
+
+.payment-order__percent span {
+font-size: 30px;
+}
+
+.term {
+}
+
+.term__title {
+}
+
+.toggle__buttons {
+
+}
+
+.toggle__standard {
+   width: 50%;
+   margin: 0;
+   border-radius: 5px 0 0 5px;
+}
+.toggle__non-standard {
+   width: 50%;
+   margin: 0;
+   border-radius: 0 5px 5px 0;
+}
+
+.toggle--active{
+   background-color: #fff;
+   color: #191919;
+}
+.term__table {
+   width: 100%;
+   border-collapse: collapse;
+}
+.term__table__standard {
+}
+.term__table-tr {
+
+}
+.term__table-td {
+
+}
+.td-1 {
+   background-color: #EFEFEF;
+}
+.td-2 {
+   background-color: rgba(229, 229, 229, 0.49);
+}
+.td-3 {
+   background-color: #EFEFEF;
+}
+.td-4 {
+   background-color: rgba(229, 229, 229, 0.49);
+}
+
+.renovation__buttons {
 }
 
 .footer{
