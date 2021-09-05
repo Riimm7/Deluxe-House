@@ -861,56 +861,162 @@ font-size: 30px;
 }
 
 .term {
+   padding-bottom: 236px;
 }
 
 .term__title {
+   margin-bottom: 59px;
 }
 
 .toggle__buttons {
-
+   margin-bottom: 16px;
 }
 
 .toggle__standard {
    width: 50%;
    margin: 0;
    border-radius: 5px 0 0 5px;
+   font-size: 16px;
+   font-weight: bold;
 }
+
 .toggle__non-standard {
    width: 50%;
    margin: 0;
    border-radius: 0 5px 5px 0;
+   font-size: 16px;
+   font-weight: bold;
 }
 
 .toggle--active{
    background-color: #fff;
    color: #191919;
 }
+
 .term__table {
    width: 100%;
    border-collapse: collapse;
+   font-family: "Garamond";
+   font-size: 16px;
+   font-weight: bold;
+   color: #191919;
+   margin-bottom: 80px;
 }
+
 .term__table__standard {
 }
-.term__table-tr {
 
+.term__table__non-standard {
+   display: none;
 }
+
+.term__table-tr:first-child .term__table-td {
+   padding: 51px 10px 31px;
+}
+
 .term__table-td {
+   padding: 17px;
 
 }
 .td-1 {
    background-color: #EFEFEF;
 }
 .td-2 {
-   background-color: rgba(229, 229, 229, 0.49);
+   background-color: rgba(229, 229, 229, 0.9);
 }
 .td-3 {
    background-color: #EFEFEF;
 }
 .td-4 {
-   background-color: rgba(229, 229, 229, 0.49);
+   background-color: rgba(229, 229, 229, 0.9);
 }
 
-.renovation__buttons {
+.prices {
+   padding-bottom: 247px;
+}
+
+.prices__title {
+   margin-bottom: 30px;
+}
+
+.prices__stripe {
+   margin-bottom: 30px;
+}
+
+.prices__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.prices__item {
+   display: flex;
+   flex-direction: column;
+   max-width: 270px;
+   height: 665px;
+   padding: 11px 0 13px;
+   background-color: #fff;
+   color: #191919;
+}
+
+.prices__item-title {
+   min-height: 53px;
+   margin-bottom: 13px;
+   font-size: 12px;
+   line-height: 26px;
+   background-color: #E1DECE;
+}
+
+.prices__item-title span{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.prices__item-content {
+   flex: 1 0 auto;
+   margin: 0 18px;
+}
+.prices__item-descr {
+   font-size: 8px;
+   line-height: 12px;
+   margin-bottom: 7px;
+}
+
+.prices__item-price {
+   font-size: 12px;
+   line-height: 26px;
+   margin-bottom: 20px;
+}
+
+.prices__item-price span{
+font-size: 20px;
+}
+
+.prices__item-price>span{
+font-weight: bold;
+font-size: 12px;
+}
+
+.prices__item-list-title {
+   margin-bottom: 14px;
+   font-size: 10px;
+   line-height: 12px;
+   font-weight: bold;
+}
+
+.prices__item-list {
+   text-align: left;
+   color: #000000;
+}
+
+.prices__item-list li{
+   font-size: 10px;
+   line-height: 20px;
+}
+
+.prices__item-btn {
+   display: block;
+   margin: 0 25px;
+   background-color: #191919;
 }
 
 .footer{
