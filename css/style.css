@@ -1019,6 +1019,128 @@ font-size: 12px;
    background-color: #191919;
 }
 
+.work{
+   padding-bottom: 121px;
+}
+
+.work__title {
+   margin-bottom: 51px;
+}
+
+.work__stripe {
+   margin-bottom: 34px;
+}
+
+.work__text{
+   padding-top: 16px;
+   text-align: left;
+   font-size: 16px;
+   line-height: 26px;
+}
+
+.work__text p{
+   margin-bottom: 22px;
+}
+
+.guarantee{
+   padding-bottom: 244px;
+}
+
+.guarantee__title{
+max-width: 1000px;
+margin: 0 auto;
+margin-bottom: 79px;
+}
+
+.guarantee__title span{
+   font-size: 60px;
+}
+
+.image-slider__image {
+   text-align: center;
+}
+
+.image-slider__image img{
+   max-width: 100%;
+}
+
+/* не работают стрелки при нажатии */
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+   width: 40px;
+   height: 40px;
+   padding: 10px;
+   border-radius: 50%;
+   background-color: #E1DECE;
+   font-size: 20px;
+   font-weight: bold;
+   color: #171717;
+}
+
+.image-slider .swiper-button-next::after {
+   background-color: rgba(255, 255, 255, 0.43);
+}
+
+.image-slider .swiper-pagination{
+   bottom: -40px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+   width: var(--swiper-navigation-size);
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+   right: -65px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+   left: -65px;
+}
+
+.image-slider .swiper-pagination-bullet {
+   width: 51px;
+   height: 5px;
+   border-radius: 0;
+   background-color: #565656;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: #fff;
+}
+
+.list-services {
+}
+
+.list-services__grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 50px;
+}
+.list-services__grid-item {
+   text-align: left;
+}
+.list-services__grid-img {
+   margin-bottom: 51px;
+}
+.list-services__grid-title {
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 18px;
+}
+.list-services__grid-list {
+   line-height: 24px;
+   color: #C4C4C4;
+}
+.list-services__grid-text {
+   line-height: 24px;
+   color: #C4C4C4;
+}
+
+.list-services__grid-text p{
+margin-bottom: 18px;
+}
+
 .footer{
    font-size: 15px;
    line-height: 25px;
