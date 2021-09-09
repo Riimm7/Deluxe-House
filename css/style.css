@@ -78,15 +78,14 @@ body{
 
 .container{
    position: relative;
-   width: 1170px;
+   max-width: 1170px;
    margin: 0 auto;
    padding: 0;
    text-align: center;
 }
 
 .header{
-   display: block;;
-
+   display: block;
 }
 .main{
    flex: 1 0 auto;
@@ -307,22 +306,32 @@ position: relative;
    height: 332px;
 }
 
-.renovation{
+.top-content__content{
    display: flex;
    flex-direction: column;
    height: 332px;
 }
 
-.renovation__subtitle{
+.top-content__subtitle{
    flex: 0 0 auto;
    padding-top: 130px;
    line-height: 28px;
 }
 
-.renovation__title {
+.top-content__title {
+   max-width: 800px;
    flex: 1 0 auto;
    font-family: "Garamond";
    font-size: 40px;
+}
+
+.top-content__text {
+   padding-top: 128px;
+   max-width: 470px;
+   margin: 0 auto;
+   flex: 1 0 auto;
+   font-size: 14px;
+   line-height: 22px;
 }
 
 .breadcrumbs {
@@ -438,7 +447,7 @@ margin-bottom: 130px;
    display: flex;
 }
 
-.about__image + .about-us__image{
+.about__image + .about__image{
    margin-left: 18px;
 }
 
@@ -903,9 +912,6 @@ font-size: 30px;
    margin-bottom: 80px;
 }
 
-.term__table__standard {
-}
-
 .term__table__non-standard {
    display: none;
 }
@@ -1108,9 +1114,6 @@ margin-bottom: 79px;
    background-color: #fff;
 }
 
-.list-services {
-}
-
 .list-services__grid {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -1139,6 +1142,169 @@ margin-bottom: 79px;
 
 .list-services__grid-text p{
 margin-bottom: 18px;
+}
+
+.about-us__video{
+   padding: 81px 0 96px;
+
+}
+
+.video {
+   position: relative;
+   padding-bottom: 56.25%;
+   overflow: hidden;
+}
+.video iframe {
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.about-us {
+   background: url(/img/about-us_bg.png) top center no-repeat;
+}
+
+.about-us__wrapper{
+   padding-top: 33px;
+   text-align: left;
+}
+
+.about-us__top {
+   padding: 70px 100px;
+   margin-bottom: 266px;
+   background-color: #191919;
+   font-size: 16px;
+   line-height: 26px;
+}
+
+.about-us__top p{
+   margin-bottom: 20px;
+}
+
+.about-us__center {
+   color: #191919;
+   margin-bottom: 320px;
+}
+
+.about-us__inner{
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.about-us__center-img {
+   position: relative;
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) ;
+   left: -150px;
+}
+
+.about-us__center-title {
+margin: 285px 0 0 -25px;
+font-size: 50px;
+line-height: 70px;
+}
+
+.about-us__center-title span {
+   font-weight: bold;
+}
+
+.about-us__center-title span>span {
+   font-size: 150px;
+}
+
+.about-us__center-text {
+   max-width: 743px;
+   margin-left: 400px;
+   font-size: 16px;
+   line-height: 26px;
+}
+
+.about-us__center-text p{
+   margin-bottom: 20px;
+}
+
+.about-us__bottom {
+   padding: 90px 110px 88px 317px;
+   background-color: #191919;
+   font-size: 16px;
+   line-height: 26px;
+}
+
+
+.about-us__bottom p{
+   margin-bottom: 20px;
+}
+
+.about-us__grid {
+   padding-top: 86px;
+}
+
+.about-us__grid-inner {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 30px;
+   margin-bottom: 75px;
+}
+
+.about-us__grid-item {
+   width: 270px;
+   height: 478px;
+   background-color: #C4C4C4;
+}
+
+.about-us__btn {
+   margin: 0 auto;
+   margin-bottom: 160px;
+}
+
+.useful-tips {
+   padding-bottom: 177px;
+}
+
+.useful-tips__title {
+   margin-bottom: 30px;
+}
+
+.useful-tips__stripe {
+   margin-bottom: 41px;
+}
+
+
+
+.works-list {
+   padding-bottom: 205px;
+}
+
+.works-list__title {
+   margin-bottom: 30px;
+}
+
+.works-list__stripe {
+   margin-bottom: 32px;
+}
+
+.works-list__wrapper {
+   display: flex;
+}
+
+.works-list__inner {
+   flex: 1 0 auto;
+   display: flex;
+   justify-content: space-around;
+   padding: 90px 35px 30px 65px;
+   text-align: left;
+   font-family: "Garamond";
+   font-size: 18px;
+   font-weight: bold;
+   background-color: #E1DECE;
+   color: #191919;
+}
+
+.works-list__item p{
+   margin-bottom: 32px;
 }
 
 .footer{
