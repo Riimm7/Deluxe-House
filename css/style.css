@@ -1262,17 +1262,48 @@ line-height: 70px;
 
 .useful-tips {
    padding-bottom: 177px;
+   color: #E1DECE;
 }
 
 .useful-tips__title {
    margin-bottom: 30px;
+   color: #E1DECE;
 }
 
 .useful-tips__stripe {
    margin-bottom: 41px;
 }
 
+.list-group {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
 
+.list-group-item{
+   position: relative;
+   display: block;
+}
+
+.list-header {
+   background: url(/img/useful-tips_icon_down.svg) right bottom no-repeat;
+   margin-bottom: 30px;
+   font-family: "Garamond";
+   font-size: 24px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.list-content {
+   margin-bottom: 30px;
+   font-size: 16px;
+   line-height: 26px;
+   color: #fff;
+}
+
+.spoiler-body {
+   display: none;
+}
 
 .works-list {
    padding-bottom: 205px;
@@ -1280,10 +1311,12 @@ line-height: 70px;
 
 .works-list__title {
    margin-bottom: 30px;
+   color: #E1DECE;
 }
 
 .works-list__stripe {
    margin-bottom: 32px;
+   color: #E1DECE;
 }
 
 .works-list__wrapper {
